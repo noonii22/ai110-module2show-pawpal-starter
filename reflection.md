@@ -2,6 +2,21 @@
 
 ## 1. System Design
 
+* Add a pet
+* Add the owners walking time preference
+* Show tasks for the day
+
+### Main objects needed for the system:
+* Pet object that holds info like: name, breed, gender, weight, activity level, bool for needs meds
+* Ownser object that holds info like: name, activity level, preferences object maybe
+* Perferences object for the time slots owner has available and what time they prefer to walk the pet
+* Pet appointments object so when the date and time pet needs grooming, medication and other scheduling factors 
+* Daily schedule object that lists tasks and daily things to do and can be add, delete, and edit functions on it with task object
+* Task object that allows ability to have name, duration, priority and type of task
+* Scheduler object that takes all other objects like preferences and tasks and fits the tasks into the alotted prefernce times
+
+
+
 **a. Initial design**
 
 - Briefly describe your initial UML design.
